@@ -37,7 +37,7 @@
 
 * 使用`git commit -m "自己对当前改动的解释"`==提交git仓库==
 
-  ![image-20230126211456124](https://i-blog.csdnimg.cn/blog_migrate/5ec5f381128ed75337ddd23e871e62c9.png)
+  ![image-20230126211456124](https://typora5672.oss-cn-chengdu.aliyuncs.com/temp/5ec5f381128ed75337ddd23e871e62c9.png)
 
   
 
@@ -58,7 +58,7 @@ git reflog# 查看每个版本对应的 SHA-1 值和操作信息，以便我们�
 git reset --hard + `SHA-1哈希值`
 ```
 
-![image-20230603170448634](https://i-blog.csdnimg.cn/blog_migrate/fcf4e82362511abf4a1e23a98e17fba1.png)
+![image-20230603170448634](https://typora5672.oss-cn-chengdu.aliyuncs.com/temp/fcf4e82362511abf4a1e23a98e17fba1.png)
 
 黄色值对应响应版本SHA-1哈希值
 
@@ -113,7 +113,7 @@ git merge
 
 * 配置公钥
 
-  ![image-20230126213555784](https://i-blog.csdnimg.cn/blog_migrate/e7950f390942d840d654ec735b3250fa.png)
+  ![image-20230126213555784](https://typora5672.oss-cn-chengdu.aliyuncs.com/temp/e7950f390942d840d654ec735b3250fa.png)
 
 * 获取公钥
 
@@ -131,7 +131,7 @@ git merge
   git push -u origin main
   ```
 
-  ![image-20230126220506109](https://i-blog.csdnimg.cn/blog_migrate/3ebd79dbc35ea5a32b08cf1cb003eece.png)
+  ![image-20230126220506109](https://typora5672.oss-cn-chengdu.aliyuncs.com/temp/3ebd79dbc35ea5a32b08cf1cb003eece.png)
 
 ###  Gitee(以Linux系统为例)
 
@@ -141,21 +141,21 @@ git merge
 
   1. `ssh-keygen -t rsa -C + 邮箱名`
   2. 进入.ssh查看公钥
-  3. ![image-20230603191612715](https://i-blog.csdnimg.cn/blog_migrate/1463f1d5fb1a00b066d31e4a8639fea2.png)
+  3. ![image-20230603191612715](https://typora5672.oss-cn-chengdu.aliyuncs.com/temp/1463f1d5fb1a00b066d31e4a8639fea2.png)
 
   4. `la查看.ssh目录`
   5. `cat id_rsa_pub`查看公钥
-  6. ![image-20230603191748750](https://i-blog.csdnimg.cn/blog_migrate/af6583d3de1762ff3b895e36fa9833af.png)
+  6. ![image-20230603191748750](https://typora5672.oss-cn-chengdu.aliyuncs.com/temp/af6583d3de1762ff3b895e36fa9833af.png)
 
 * 粘贴公钥
 
-* ![image-20230603192509564](https://i-blog.csdnimg.cn/blog_migrate/23ddf2e0d2a78743b894fe56317545e8.png)
+* ![image-20230603192509564](https://typora5672.oss-cn-chengdu.aliyuncs.com/temp/23ddf2e0d2a78743b894fe56317545e8.png)
 
 * 测试是否配置成功：`ssh –T git@gitee.com`
 
 * 查看远程仓库：`git remote -v`
 
-* ![image-20230603200654144](https://i-blog.csdnimg.cn/blog_migrate/22785f45c1bdc9ff776d039fc3316868.png)
+* ![image-20230603200654144](https://typora5672.oss-cn-chengdu.aliyuncs.com/temp/22785f45c1bdc9ff776d039fc3316868.png)
 
 * origin可增加名字=》`git remote add +更名 +远程仓库地址 `
 
