@@ -26,4 +26,8 @@ features:
     link: https://gitee.com/jiuwen567/vuepanel
   - title: BlackHoleDjango
     details: django rest framework后台管理系统。
+    link: https://gitee.com/jiuwen567/black-hole-django
+  - title: VortexBlog
+    details: django5前后端不分离全栈博客项目。
+    link: https://gitee.com/jiuwen567/vortex-blog
 ---
