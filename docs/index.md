@@ -12,10 +12,10 @@ hero:
   actions:
     - theme: brand
       text: GitHub
-      link: https://github.com/jiuwen567/
+      link: https://github.com/jiuwen567/JiuWenBlog.git
     - theme: brand
       text: Gitee
-      link: https://gitee.com/jiuwen567
+      link: https://gitee.com/jiuwen567/jiu-wen-blog.git
 
 features:
   - title: SecurityEye
