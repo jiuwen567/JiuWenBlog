@@ -1,0 +1,29 @@
+---
+# https://vitepress.dev/reference/default-theme-home-page
+layout: home
+
+hero:
+  name: "九问Blog"
+  text: "欢迎访问九问Blog！"
+  tagline: 分享一些Python全栈开发以及爬虫技术，希望对你有所帮助！
+  image:
+    src: /logo.png
+    alt: Blog
+  actions:
+    - theme: brand
+      text: GitHub
+      link: https://github.com/jiuwen567/
+    - theme: brand
+      text: Gitee
+      link: https://gitee.com/jiuwen567
+
+features:
+  - title: SecurityEye
+    details: 一款基于 Python-Django 的多功能 Web 应用渗透测试系统，包含漏洞检测、目录识别、端口扫描、指纹识别、域名探测、旁站探测、信息泄露检测、网站权重探测等功能。
+    link: https://gitee.com/jiuwen567/security-eye
+  - title: Vuepanel
+    details: Vue后台管理系统，前后端分离，前端项目
+    link: https://gitee.com/jiuwen567/vuepanel
+  - title: BlackHoleDjango
+    details: django rest framework后台管理系统。
+---
