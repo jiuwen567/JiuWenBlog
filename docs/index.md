@@ -7,7 +7,7 @@ hero:
   text: "欢迎访问九问Blog！"
   tagline: 分享一些Python全栈开发以及爬虫技术，希望对你有所帮助！
   image:
-    src: /logo.png
+    src: 'https://typora5672.oss-cn-chengdu.aliyuncs.com/temp/Image_1711162914066.jpg'
     alt: Blog
   actions:
     - theme: brand

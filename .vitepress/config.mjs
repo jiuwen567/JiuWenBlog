@@ -20,6 +20,16 @@ export default defineConfig({
         search: {
             provider: 'local'
         },
+        // 修改文档页脚的文字
+        docFooter: {
+            prev: "上一篇",
+            next: "下一篇"
+        },
+        returnToTopLabel: "回到顶部",
+        sidebarMenuLabel: "菜单",
+        darkModeSwitchLabel: "主题",
+        lightModeSwitchTitle: "切换到浅色模式",
+        darkModeSwitchTitle: "切换到深色模式"
         // editLink: {
         //     pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
         //     text: 'Edit this page on GitHub'
