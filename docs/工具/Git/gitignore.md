@@ -21,10 +21,6 @@
 node_modules/
 ```
 
-Plaintext
-
-Copy
-
 以上规则表示忽略根目录下的node_modules文件夹以及其下的所有文件。
 
 ## 在.gitignore中添加其他忽略规则
@@ -49,10 +45,6 @@ dist/
 *.exe
 ```
 
-Plaintext
-
-Copy
-
 根据项目实际情况，我们可以根据需要添加其他的忽略规则。
 
 ## 如何应用.gitignore文件的变更
@@ -69,9 +61,5 @@ git add .
 # 提交变更
 git commit -m "Update .gitignore"
 ```
-
-Bash
-
-Copy
 
 通过以上命令，我们清除了已缓存的文件并重新将所有文件添加到暂存区中，然后再次提交变更即可。
