@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "markdown-it-mathjax3": "^4.3.2",
+    "vite-plugin-vitepress-auto-nav": "^3.0.0",
+    "vitepress": "^1.3.3"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview --port 3000"
+  },
+  "dependencies": {
+    "@escook/vitepress-theme": "^1.3.1",
+    "markdown-it": "^14.1.0"
+  }
+}
