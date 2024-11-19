@@ -1,4 +1,4 @@
-[TOC]
+
 
 ## 1. let、const、var
 
@@ -64,26 +64,124 @@ let bar = 2;
 
 上面代码中，变量`foo`用`var`命令声明，会发生变量提升，即脚本开始运行时，变量`foo`已经存在了，但是没有值，所以会输出`undefined`。变量`bar`用`let`命令声明，不会发生变量提升。这表示在声明它之前，变量`bar`是不存在的，这时如果用到它，就会抛出一个错误。
 ## 2. 数据类型
-```mindmap
-# 数据类型
-## 1. **基本数据类型**:
-###     **Number**
-#### 整数和浮点数。
-### **String**
-####    文本。
-### **Boolean**
-####    表示逻辑值，即true或false。
-### **Null**
-####    表示空值。
-### **Undefined** 
-####    表示未定义的值。
-### **Symbol** (ES6新增):
-####    唯一且不可变的值，通常用作对象属性的键值。
-###    function
-#### 如果操作数是函数
-### - **Object**
-####    对象，可以包含多个键值对。
-## 3. typeof 获取数据类型
-### - typeof operand;//operand：要检测其类型的操作数。
-```
+
+* Number
+* NAN
+  * 非数字类型
+* String
+  * ‘’包裹
+  * “”包裹
+  * ``包裹
+  * 转义字符
+    * `\`+特点字符
+    * `\n`换行
+    * `\"`  "
+    * `\'` ‘
+* Boolean
+  * 表示逻辑值，即true或false。
+* Null
+* Symbol
+  * ES6新增
+  *  唯一且不可变的值，通常用作对象属性的键值。
+* function
+* undefined
+  * 变量没有被赋值
+* Object
+  * 对象，可以包含多个键值对。
+
+typeof 获取数据类型
+
+- typeof operand;//operand：要检测其类型的操作数。
+
+## html引入js
+
+1. 法一
+
+   ```html
+   <script type="text/javascript">
+   	function myFunction(argument) {
+   		alert("<\/script>")
+   	}
+    </script>
+   
+   ```
+
+2. 法二
+
+   ```js
+   <script type="text/javascript" src="example.js"></script>
+   ```
+
+## 弹框输入语句
+
+prompt
+
+示例
+
+1. demo.html
+
+   ```html
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+   </head>
+   <body>
+       <script type="text/javascript" src="./demo.js"></script>
+   </body>
+   </html>
+   ```
+
+2. demo.js
+
+   ```js
+   var n = prompt("请输入你的姓名")
+   alert(n)
+   ```
+
+   
+
+## Date对象
+
+1. JavaScript 获取当前毫秒时间戳
+
+   ```js
+   console.log((new Date()).valueOf());   
+   console.log(new Date().getTime());      
+   console.log(Date.now());                
+   console.log(+new Date());           
+   ```
+
+2. 获取具体时间
+
+   ```js
+   var myDate = new Date();
+   console.log(myDate.getYear()); //通常是一个 2 位数（但有时可能会显示成 3 位数），已经不推荐使用。并不是直接返回当前的年份，而是返回从 1900 年到现在的年份差。
+   console.log(myDate.getFullYear()); //获取完整的年份(4位,1970-????)
+   myDate.getMonth(); //获取当前月份(0-11,0代表1月)         // 所以获取当前月份是myDate.getMonth()+1; 
+   myDate.getDate(); //获取当前日(1-31)
+   myDate.getDay(); //获取当前星期X(0-6,0代表星期天)
+   myDate.getTime(); //获取当前时间(从1970.1.1开始的毫秒数)
+   myDate.getHours(); //获取当前小时数(0-23)
+   myDate.getMinutes(); //获取当前分钟数(0-59)
+   myDate.getSeconds(); //获取当前秒数(0-59)
+   myDate.getMilliseconds(); //获取当前毫秒数(0-999)
+   ```
+
+3. 案例-计算双十一过去时间
+
+   ```js
+   var myDate = new Date();
+   var double11 = new Date('2024-11-11 00:00:00')
+   var diff = myDate-double11
+   var second = Math.floor(diff/1000%60)
+   var minute = Math.floor(diff/1000/60%60)
+   var hour = Math.floor(diff/1000/60/60%24)
+   var day = Math.floor(diff/1000/60/60/24)
+   console.log(`双十一过去${day}天${hour}时${minute}分${second}秒`)
+   ```
+
+   
 

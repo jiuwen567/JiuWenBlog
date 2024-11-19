@@ -1,4 +1,4 @@
-[TOC]
+
 
 ## 如何理解层叠
 
@@ -291,4 +291,64 @@
     </html>
     ```
   
+* position
+
+  * relative（相对文档流）
+    * 不会释放文档流
+    * 基于自身左上角的点进行定位
+    * 上下左右为平移距离（可新设置属性top: 100px、left:100px等）
+  * absolute
+    * 释放文档流
+    * 先找父视图是否有定位属性（position）如果没有继续往上找。
+  * fixed
+    * 释放文档流
     
+  * ```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .div1{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                position: fixed;
+                right: 0;
+            }
+            .div2{
+                width: 200px;
+                height: 200px;
+                background-color: yellow;
+                position: relative;
+                left: 200px;
+            }
+            .div3{
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+                position: absolute;
+                right: 200px;
+                bottom: 200px;
+            }
+            .div4{
+                width: 200px;
+                height: 1000px;
+                background-color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="div4"></div>
+    </body>
+    </html>
+    ```
+  
+  * ![image-20241027233826168](https://typora5672.oss-cn-chengdu.aliyuncs.com/temp/image-20241027233826168.png)
+  
+  
