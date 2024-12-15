@@ -1,0 +1,1 @@
+> 官网：[Welcome to Faker’s documentation! — Faker 33.1.0 documentation](https://faker.readthedocs.io/en/master/)

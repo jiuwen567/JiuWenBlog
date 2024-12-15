@@ -30,7 +30,7 @@
 
 #### 1.2.1 input
 
-* 搭配label标签
+* 搭配label标签,有此标签填写for属性后点击用户名也可获得焦点进行输入。
 
   ```html
   <label for="user">
