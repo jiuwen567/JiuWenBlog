@@ -30,4 +30,7 @@ features:
   - title: VortexBlog
     details: django5前后端不分离全栈博客项目。
     link: https://gitee.com/jiuwen567/vortex-blog
+  - title: ChatPulse
+    details: 前后端分离，django5&vue3聊天室项目，后端基于Websocket实时通信。
+    link: https://gitee.com/jiuwen567/chat-room
 ---

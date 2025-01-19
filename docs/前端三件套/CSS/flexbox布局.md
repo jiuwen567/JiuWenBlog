@@ -16,16 +16,16 @@
 
    - **`flex-direction`**：决定主轴的方向（行/列）。
    - **`justify-content`**：在主轴上对齐项目。
-
      * flex-start
      * flex-end
      * center
      * space-between
      * space-around
    - **`flex-wrap`**：控制项目是否换行。
-* wrap换行
-   - **`align-items`**：在交叉轴上对齐项目。
-   - `align-content`:定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用
+     * wrap换行
+
+* **`align-items`**：在交叉轴上对齐项目。
+* **`align-content`**：定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用
 
 ###    项目的属性
 
